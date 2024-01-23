@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Especificidad</title>
+		<!-- El orden de especifidad va en orden de id, class, elemento o pseudoelemento, loe elementos en linea tienen prioridad sobre todas ellas-->
+		<style>
+			.text {
+				font-size: 24px;
+				color: #09f;
+				font-family: system-ui;
+				font-weight: bold;
+			}
+
+			/* <!-- Colocando la etiqueta important se asegura de que un estilo se aplique, tiene la mayor especificidad --> */
+			#text {
+				color: purple !important;
+			}
+
+			/* Asegurar compatibilidad haciendo un fallback */
+			p {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="text" id="text" style="color: burlywood">Aqui va un texto</p>
+	</body>
+</html>

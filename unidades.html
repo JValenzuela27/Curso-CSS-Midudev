@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Unidades relativas y absolutas</title>
+
+		<style>
+			.container {
+				width: 50vw;
+				height: 100vh;
+				background: red;
+			}
+
+			/* El porcentaje es una unidad relativa del contenedor padre */
+			.container {
+				width: 50%;
+				height: 50%;
+				background: red;
+			}
+
+			.container {
+				width: 250px;
+				height: 250px;
+				background: red;
+			}
+
+			body {
+				background-color: #09f;
+				/* Quitarlo porque ya viene por defecto un margen del navegador */
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<span>Este es un texto y lo leemos de izquierda a derecha y las palabras se apulan en linea</span>
+
+		<div class="container">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, modi.</div>
+	</body>
+</html>

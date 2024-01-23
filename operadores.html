@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Operador primer hijo</title>
+		<style>
+			article {
+				font-size: 24px;
+			}
+			/* Estilo solamente a descendiente en el primer nivel (Hijos directos) */
+			article > p {
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<article>
+			<p>Este es el contenido del articulo</p>
+
+			<p>Otro articulo</p>
+			<footer>
+				<p>Escrito por Javier</p>
+			</footer>
+		</article>
+	</body>
+</html>

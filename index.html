@@ -23,25 +23,73 @@
   <link rel="icon" type="image/jpg" href="/images/yo.jpg">
 
   <style>
-    body {
-      background: rgba(135, 221, 255, 0.9)
+    h1{
+        /* rgba ya no se utiliza, ahora se utiliza de esta forma para colocar opacidad al color */
+        /* color: rgb(0 0 0 /50%);
+        color: #000;
+        color: hsl(60, 100%, 100%);
+        color: oklch(348 83% 44% /50%); */
+        
+
+        color: #0099ffff;
+        /* border-width: 3px;
+        border-style: solid;
+        border-color: #fff;
+        border-color: currentColor; */
     }
+
+    body{
+        background: #e3e0e1;
+    }
+    /* Selectores de clases */
+    .link{
+        color: red;
+    }
+
+    /* Selectores de id */
+    #show{
+        background: #09f;
+        color: white;
+        border: 0;
+    }
+    
+    /* pseudoclases */
+    /* Hay una diferencia entre border y outline, el outline se dibuja encima del contenido y el border afecta al contenido */
+    .link:hover{
+      outline: 5px solid red;
+    }
+
+    .link:active{
+      outline: 5px solid blue;
+    }
+
+    .link:focus{
+      border: 1px solid yellow;
+    }
+
+    li:first-child{
+      color: pink;
+    }
+
+    li:last-child{
+      color: purple;
+    }
+
   </style>
 </head>
 
 <body>
   <header>
     <h1>Portfolio de @midudev 👨‍💻</h1>
-
     <!-- <iframe style="width:100%; aspect-ratio:16/9;" src="https://www.youtube.com/embed/8aryHZ8Z9WY?si=Jokizg8gw8S9BPOo"
       title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen></iframe> -->
 
     <nav>
-      <a href="#experiencia">Experiencia</a>
-      <a href="#proyectos">Proyectos</a> <!-- enlaces internos -->
-      <a href="https://twitch.tv/midudev" target="_blank" rel="noreferrer">Twitch</a>
+      <a class="link" href="#experiencia">Experiencia</a>
+      <a class="link" href="#proyectos">Proyectos</a> <!-- enlaces internos -->
+      <a class="link" href="https://twitch.tv/midudev" target="_blank" rel="noreferrer">Twitch</a>
     </nav>
   </header>
 
@@ -228,8 +276,10 @@
     <a href="tel:+34688888899">Llamar por teléfono</a>
     <a href="whatsapp://send?text=Hola midudev">Llamar por teléfono</a>
   </footer>
+    
+  </body>
 
-
+</html>
 
 
 
