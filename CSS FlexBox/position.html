@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Position</title>
+
+		<style>
+			section {
+				border: 5px solid #000;
+				width: 250px;
+				height: 250px;
+				box-sizing: border-box;
+				/* Se crea un punto relativo para que los elementos hijos puedan tomarlo como referencia */
+				position: relative;
+			}
+
+			/* Con position fixed, es parecido al absolute, pero con el fixed se toma la pantalla como coordenadas relativas, sin cambiar la posicion del contenido al hacer scroll */
+
+			/* Position fixed y Sticky no son lo mismo, el sticky no se va a quedar fijo en pantalla, sino que se va a quedar fijo en pantalla tomando la posicion relativa del contenedor (Se queda pegado al contenedor en el que está), el contenedor debe ser position relative */
+			.container {
+				background: #09f;
+				width: 100px;
+				height: 100px;
+				/* Con una posicion absoluta se puede posicionar el elemento en una posicion especifica */
+				position: absolute;
+				/* Se posiciona de acuerdo al documento por defecto, para utilizar otro punto de referencia se debe usar position:relative en el elemento padre */
+				bottom: 0;
+				left: 0;
+			}
+
+			body {
+				background: rgb(129, 129, 174);
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<div class="container">Container</div>
+		</section>
+	</body>
+</html>

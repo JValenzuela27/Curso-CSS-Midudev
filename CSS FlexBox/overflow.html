@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Overflow</title>
+		<style>
+			.container {
+				width: 150px;
+				height: 150px;
+				background: white;
+				padding: 10px;
+				box-sizing: border-box;
+				font-size: 36px;
+				/* Asi se soluciona el desbordamiento, usualmente se agregan barras horizontales y verticales segun el caso de desplazamiento, se acopla al navegador */
+				/* overflow: auto; */
+
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			body {
+				background: #09f;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="container">CSS IS AWESOME</section>
+	</body>
+</html>
