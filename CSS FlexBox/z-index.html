@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Z index</title>
+
+		<style>
+			.parent {
+				border: 5px solid #000;
+				width: 250px;
+				height: 500px;
+				box-sizing: border-box;
+				position: relative;
+			}
+
+			.container {
+				background: #09f;
+				width: 150px;
+				height: 150px;
+				position: fixed;
+				/* Se le indica la prioridad en el eje de profundidad, con numeros positivos se coloca por encima y con negativa se coloca por detras, tienen que ser relativas a algo */
+				z-index: 1;
+			}
+
+			body {
+				background: rgb(129, 129, 174);
+			}
+		</style>
+	</head>
+	<body>
+		<section class="parent">
+			<div class="container">Container</div>
+		</section>
+		<section class="parent">
+			<div class="container">Container</div>
+		</section>
+		<section class="parent">
+			<div class="container">Container</div>
+		</section>
+	</body>
+</html>
