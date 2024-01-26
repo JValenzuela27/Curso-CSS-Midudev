@@ -19,3 +19,7 @@ con flex ditection no wrap, basis auto y valores 1 en el grow y shrink, los elem
 Con los valores anteriores, pero con un valor 0 en flex-basis se puede hacer que todos los elementos tengan el mismo tamaño sin importar el contenido (Lo mismo que flex:1)
 
 El flex: 1 tambien puede usarse como medida relativa, colocandolo al padre y si se desea por ejemplo que uno tenga el doble del tamaño que los demás, se coloca flex:2.
+
+Se puede colocar la propiedad order para cambiar el orden de los elementos, usualmente se usa en footers responsive.
+
+[Juego para aprender FlexBox](https://flexboxfroggy.com/)
